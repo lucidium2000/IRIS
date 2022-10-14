@@ -29,5 +29,8 @@ $hops=10
 Make sure to keep formatting the same. Be aware that the metric browser will create a new folder for each test in: Custom Metrics/Network/IRIS/ under the name of the server running the machine agent. There will be a folder for each hop named accordingly with a new metric called ResponseTime for each minute, with a metric folder denoting the IP of the hop to be used with further investigation.
 This alone will give enough data for analysis. But for a visual representation, you can create dashboards with these custom metrics. Some templates are provided via the Resources folder. The provided dashboard relies on health rules that should be created first. 
 
-To retrofit the health alerts and dashboard to your tests, go to the resources folder and run the CustomHealthandDashCreation.ps1 script in the ./monitors/IRIS/resources folder.
-It will output 2 files, 1 for the HealthTemplates and another for the Dashboard. Import health rules first into the Server and Infrastructure category. Then Import Dashboard file accordingly.  
+To retrofit the health alerts and dashboard to your tests:
+
+1. Go to the resources folder and run the CustomHealthandDashCreation.ps1 script in the ./monitors/IRIS/resources folder.
+2. It will output 2 files, 1 for the HealthTemplates and another for the Dashboard. 
+3.Import health rules first into the Server and Infrastructure category. Then Import Dashboard file accordingly.  
