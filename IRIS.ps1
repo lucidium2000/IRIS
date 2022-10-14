@@ -1,6 +1,6 @@
-﻿#Set Destination and Hops - More destinations may benefit from less hops for better response times
-$destlist='teams.office.com','www.google.com','outlook.office.com',"www.salesforce.com","www.servicenow.com"
-# ,"www.splunk.com","www.atlassian.com"
+﻿#Set Destination and Hops - More destinations may benefit from less hops for better response times 'keep total hops less than 50. (Destinations x hops)'
+ #Change the following 3 examples
+$destlist='www.google.com','outlook.office.com','teams.office.com'
 $hops=10
 
 #Static Variables
