@@ -9,7 +9,7 @@ This extension allows customers to use the AppDynamics Machine Agent to setup ne
 
 •	Hops per location can also be defined here, the default is 10, but can be set higher.
 
-•	Due to the nature of how the tests work, please limit total hops to 50 per agent, for optimal performance. (For example, 5 tests at 10 hops ’5x10=50’, or 3 tests at 15 hops ’3x15=15’, etc.) Most locations will be under 20.
+•	Due to the nature of how the tests work, please limit total hops to 50 per agent, for optimal performance. (For example, 5 tests at 10 hops ’5x10=50’, or 3 tests at 15 hops ’3x15=15’, etc.) Most locations will reach destination under 20 hops.
 
 •	Bundled in the resource folder are templates for alerting and dashboards.
 
