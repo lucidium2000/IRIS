@@ -7,9 +7,7 @@ This extension allows customers to use the AppDynamics Machine Agent to setup ne
 
 •	Configuration is set via the IRIS.ps1 file on the top commented lines.
 
-•	Hops per location can also be defined here, the default is 10, but can be set higher.
-
-•	Due to the nature of how the tests work, please limit total hops to 50 per agent, for optimal performance. (For example, 5 tests at 10 hops ’5x10=50’, or 3 tests at 15 hops ’3x15=15’, etc.) Most locations will reach destination under 20 hops.
+•	Due to the nature of how the tests work, please limit to 5 total tests per agent.
 
 •	Bundled in the resource folder are templates for alerting and dashboards.
 
@@ -22,9 +20,8 @@ IRIS.ps1
 
 Only the top commented area should be modified
 
-Example test to Google, Outlook(O365), Teams(O365) with 10 hops each:
+Example test to Google, Outlook(O365), Teams(O365):
 $destlist='www.google.com','outlook.office.com',’teams.office.com’
-$hops=10
 
 Make sure to keep formatting the same. Be aware that the metric browser will create a new folder for each test in: Custom Metrics/Network/IRIS/ under the name of the server running the machine agent. There will be a folder for each hop named accordingly with a new metric called ResponseTime for each minute, with a metric folder denoting the IP of the hop to be used with further investigation.
 This alone will give enough data for analysis. But for a visual representation, you can create dashboards with these custom metrics. Some templates are provided via the Resources folder. The provided dashboard relies on health rules that should be created first. 
