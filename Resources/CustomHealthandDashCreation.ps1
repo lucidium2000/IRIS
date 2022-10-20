@@ -1,8 +1,8 @@
-$Server=$env:computername
+
 while($true)
 {
  CLS
-
+$Server=$env:computername
 #Ask for input from user
  write-output 'NOTE: Make sure the server name and destination names match what are in the metric browser or these templates will fail to connect'
  $ServerInput = Read-Host -Prompt "Input your server name, LEAVE BLANK FOR: '$Server'"
