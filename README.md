@@ -33,4 +33,4 @@ To retrofit the health alerts and dashboard to your tests:
 
 1. Go to the resources folder and run the CustomHealthandDashCreation.ps1 script in the ./monitors/IRIS/resources folder.
 2. It will output 2 files, 1 for the HealthTemplates and another for the Dashboard. 
-3. Import health rules first into the Server and Infrastructure category. Then Import Dashboard file accordingly.  
+3. Import health rules first into the Server and Infrastructure category. MAKE SURE THE HEALTH RULES ARE APPLIED AND SHOWING DATA BEFORE ADDING THE DASHBAORDS OR THEY WON'T LINK. Once the alerts are working, then Import Dashboard file accordingly.  
