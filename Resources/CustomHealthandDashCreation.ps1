@@ -4,7 +4,7 @@ while($true)
  CLS
 $Server=$env:computername
 #Ask for input from user
- write-output 'NOTE: Make sure the server name and destination names match what are in the metric browser or these templates will fail to connect'
+ write-output 'NOTE: Make sure the server name and destination names match what are in the metric browser or these templates will fail to connect(Case Sensitive)'
  $ServerInput = Read-Host -Prompt "Input your server name, LEAVE BLANK FOR: '$Server'"
  $TestDest = Read-Host -Prompt 'Input your test URL'
  $Server=$ServerInput
