@@ -27,7 +27,7 @@ There will be a folder for each hop named accordingly with a new metric called R
 
 Health Alerts and Route path dashboard templates can be created via provided script:
 
-1. Go to the resources folder and run the CustomHealthandDashCreation.ps1 script in the ./monitors/IRIS/resources folder.*MAKE SURE ALL NAMES MATCH EXACTLY (Case Sensitive)*
+1. Go to the resources folder and run the CustomHealthandDashCreation.ps1 script in the ./monitors/IRIS/resources folder. *MAKE SURE ALL NAMES MATCH EXACTLY (Case Sensitive)*
 2. It will output 2 files, 1 for the HealthTemplates and another for the Dashboard.(Under the ./CustomTemplates folder) 
 3. Import health rules into the Alerting Templates
 4. Apply the new template into the 'Server and Infrastructure category'. *MAKE SURE THE HEALTH RULES ARE APPLIED AND SHOWING DATA BEFORE ADDING THE DASHBAORDS OR THEY WON'T LINK*. Once the alerts are working, then Import Dashboard file accordingly. 
